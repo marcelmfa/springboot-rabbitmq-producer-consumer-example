@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    listener:
+      simple:
+        concurrency: 10
+        max-concurrency: 15
+logging:
+  level:
+    com.github.marcelmfa: debug
